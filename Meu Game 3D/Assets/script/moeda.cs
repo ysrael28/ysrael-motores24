@@ -13,6 +13,7 @@ public class moeda : MonoBehaviour
     {
         if (other.tag == "Player")
         {
+            FindObjectOfType<GameManager>().subtrairMoedas(1);
             Destroy(gameObject);
         }
     }
